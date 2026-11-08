@@ -107,7 +107,9 @@ function renderSummary(stations) {
   elements.selectedSchoolLabel.textContent = getSchool().name;
   elements.recommendationName.textContent = top.name;
   elements.recommendationScore.textContent = top.score.overall;
-  elements.recommendationRent.textContent = fmtHKD(top.rent.medianRent);
+  elements.recommendationRent.textContent = top.rent.lowRentSample
+    ? `${fmtHKD(top.rent.medianRent)}*`
+    : fmtHKD(top.rent.medianRent);
   elements.recommendationCommute.textContent = `${top.commute.totalMinutes} 分钟`;
   elements.budgetCandidates.textContent = `${budgetCount} / ${stations.length}`;
 }
@@ -244,11 +246,16 @@ function renderRanking(stations) {
                 ? '<span class="rank-status over">超预算</span>'
                 : ""
             }
+            ${
+              station.rent.lowRentSample
+                ? '<span class="rank-status over">租金样本不足</span>'
+                : ""
+            }
           </span>
           <span class="rank-meta">
             <span>${fmtHKD(station.rent.medianRent)}</span>
             <span>${station.commute.totalMinutes} min</span>
-            <span>${station.rent.nAnalysis} 条样本</span>
+            <span>${station.rent.nAnalysis} 条学生样本</span>
           </span>
           <span class="mini-components" aria-hidden="true">
             ${miniBar("rent", station.score.rent)}
@@ -280,6 +287,9 @@ function renderDetail(station, stations) {
     station.poi.lowSample
       ? '<span class="detail-tag alert">餐饮低样本</span>'
       : '<span class="detail-tag">POI 样本可用</span>',
+    station.rent.lowRentSample
+      ? '<span class="detail-tag alert">租金低样本</span>'
+      : '<span class="detail-tag">租金样本可用</span>',
   ].join("");
 
   renderRent(station, stations);
@@ -321,7 +331,14 @@ function renderRent(station, stations) {
     <div><span>≤15k 占比</span><strong>${Math.round(
       station.rent.affordableShare * 100,
     )}%</strong></div>
+    <div><span>学生租住样本</span><strong>${station.rent.nAnalysis} 条</strong></div>
   `;
+  if (station.rent.lowRentSample) {
+    elements.rentSummary.insertAdjacentHTML(
+      "beforeend",
+      '<p class="sample-warning">该站可识别的学生租住样本少于 10 条，租金维度不参与综合评分。</p>',
+    );
+  }
 }
 
 function renderCommute(station) {
@@ -436,7 +453,9 @@ function updateDynamicCopy() {
   elements.metaSummary.textContent =
     `${fmtNumber(DATA.meta.rentalRows)} 条原始租房 · ${fmtNumber(
       DATA.meta.rentalEligible,
-    )} 条分析样本 · ${fmtNumber(DATA.meta.poiNodes)} 个 POI · ${
+    )} 条合格住宿 · ${fmtNumber(
+      DATA.meta.rentalStudentProxy,
+    )} 条学生租住样本 · ${fmtNumber(DATA.meta.poiNodes)} 个 POI · ${
       DATA.meta.schoolCount
     } 所学校`;
 }
