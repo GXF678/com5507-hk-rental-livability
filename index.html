@@ -1,0 +1,264 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="香港研究生租房宜居度数据可视化交互示范"
+    />
+    <title>香港研究生租房宜居度</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="app-shell">
+      <aside class="rail" aria-label="应用导航">
+        <a class="brand" href="#top" aria-label="回到页面顶部">
+          <span class="brand-mark">住</span>
+          <span class="brand-copy">
+            <strong>住研 HK</strong>
+            <small>Livability Lab</small>
+          </span>
+        </a>
+
+        <nav class="rail-nav">
+          <button class="nav-item is-active" type="button" data-jump="explore">
+            <span class="nav-index">01</span>
+            <span>探索</span>
+          </button>
+          <button class="nav-item" type="button" data-jump="evidence">
+            <span class="nav-index">02</span>
+            <span>证据</span>
+          </button>
+          <button class="nav-item" type="button" data-jump="method">
+            <span class="nav-index">03</span>
+            <span>方法</span>
+          </button>
+        </nav>
+
+        <div class="rail-note">
+          <span class="status-dot" aria-hidden="true"></span>
+          <div>
+            <strong>数据演示版</strong>
+            <span id="data-asof">截至 2026-11-05</span>
+          </div>
+        </div>
+
+        <div class="rail-source">
+          <span>28Hse</span>
+          <span>MTR</span>
+          <span>OSM</span>
+        </div>
+      </aside>
+
+      <main class="main" id="top">
+        <header class="page-header">
+          <div class="page-title">
+            <span class="eyebrow">COM5507 · INTERACTIVE DATA DEMO</span>
+            <h1>香港研究生租房宜居度</h1>
+            <p>先看学校通勤，再看租金和日常便利。每个排名都能回到数据证据。</p>
+          </div>
+          <div class="header-actions">
+            <label class="field">
+              <span>目标学校</span>
+              <select id="school-select" aria-label="选择目标学校"></select>
+            </label>
+            <button class="quiet-button" id="print-button" type="button">
+              导出当前画面
+            </button>
+          </div>
+        </header>
+
+        <section class="control-strip" aria-label="筛选条件">
+          <div class="control-group">
+            <span class="control-label">生活方式</span>
+            <div class="segmented" id="mode-control" role="group" aria-label="选择生活方式">
+              <button class="segment is-active" type="button" data-mode="balanced" aria-pressed="true">
+                均衡
+              </button>
+              <button class="segment" type="button" data-mode="budget" aria-pressed="false">
+                预算
+              </button>
+              <button class="segment" type="button" data-mode="commute" aria-pressed="false">
+                通勤
+              </button>
+              <button class="segment" type="button" data-mode="food" aria-pressed="false">
+                餐饮
+              </button>
+            </div>
+          </div>
+          <div class="budget-control">
+            <div class="budget-heading">
+              <label for="budget-range">月租上限</label>
+              <strong id="budget-value">HK$ 25,000</strong>
+            </div>
+            <input
+              id="budget-range"
+              type="range"
+              min="8000"
+              max="40000"
+              step="1000"
+              value="25000"
+            />
+            <div class="budget-scale">
+              <span>8,000</span>
+              <span>40,000</span>
+            </div>
+          </div>
+          <div class="mode-note">
+            <span>当前权重</span>
+            <strong id="weight-summary">通勤 45 · 租金 40 · 餐饮 15</strong>
+          </div>
+        </section>
+
+        <section class="summary-band" aria-live="polite">
+          <div class="summary-lead">
+            <span id="selected-school-label">香港大学</span>
+            <strong id="recommendation-name">加载中</strong>
+          </div>
+          <div class="summary-stat">
+            <span>综合得分</span>
+            <strong id="recommendation-score">--</strong>
+          </div>
+          <div class="summary-stat">
+            <span>租金中位数</span>
+            <strong id="recommendation-rent">--</strong>
+          </div>
+          <div class="summary-stat">
+            <span>港铁有效通勤</span>
+            <strong id="recommendation-commute">--</strong>
+          </div>
+          <div class="summary-stat">
+            <span>预算内候选</span>
+            <strong id="budget-candidates">--</strong>
+          </div>
+        </section>
+
+        <section class="dashboard-grid" id="explore">
+          <article class="map-panel panel">
+            <div class="panel-header">
+              <div>
+                <span class="section-kicker">SPATIAL VIEW</span>
+                <h2>候选生活圈</h2>
+              </div>
+              <div class="map-legend" aria-label="地图图例">
+                <span><i class="legend-dot high"></i>高分</span>
+                <span><i class="legend-dot mid"></i>中等</span>
+                <span><i class="legend-ring"></i>1 km</span>
+              </div>
+            </div>
+            <div class="map-wrap">
+              <svg
+                id="station-map"
+                viewBox="0 0 760 500"
+                role="img"
+                aria-labelledby="map-title map-desc"
+              >
+                <title id="map-title">候选站点生活圈地图</title>
+                <desc id="map-desc">站点颜色表示综合得分，圆圈表示约一公里半径。</desc>
+              </svg>
+              <div class="map-tooltip" id="map-tooltip" role="tooltip" hidden></div>
+            </div>
+            <div class="map-note">
+              <span>示意地图，仅用于比较候选站点的相对位置。</span>
+              <strong id="map-caption">香港大学 · 5 个预设站点</strong>
+            </div>
+          </article>
+
+          <aside class="ranking-panel panel" aria-live="polite">
+            <div class="panel-header">
+              <div>
+                <span class="section-kicker">RANKING</span>
+                <h2>推荐排序</h2>
+              </div>
+              <span class="ranking-count" id="ranking-count">5 站</span>
+            </div>
+            <div class="ranking-list" id="ranking-list"></div>
+            <p class="ranking-footnote">
+              <span class="note-mark">i</span>
+              低于 15,000 港元为可负担房源参考线；餐饮低样本站点不参与餐饮排名。
+            </p>
+          </aside>
+        </section>
+
+        <section class="detail-section" id="evidence" aria-live="polite">
+          <header class="detail-header">
+            <div>
+              <span class="section-kicker">SELECTED STATION</span>
+              <h2 id="detail-title">深水埗</h2>
+              <p id="detail-subtitle">TWL · 深水埗 · 综合得分 --</p>
+            </div>
+            <div class="detail-tags" id="detail-tags"></div>
+          </header>
+
+          <div class="evidence-grid">
+            <article class="evidence-block">
+              <div class="evidence-heading">
+                <span>01 · RENT</span>
+                <h3>租金分布</h3>
+              </div>
+              <div class="rent-scale" id="rent-scale"></div>
+              <div class="rent-summary" id="rent-summary"></div>
+            </article>
+
+            <article class="evidence-block">
+              <div class="evidence-heading">
+                <span>02 · COMMUTE</span>
+                <h3>港铁通勤</h3>
+              </div>
+              <div class="commute-route" id="commute-route"></div>
+              <div class="commute-facts" id="commute-facts"></div>
+            </article>
+
+            <article class="evidence-block">
+              <div class="evidence-heading">
+                <span>03 · DINING</span>
+                <h3>日常便利</h3>
+              </div>
+              <div class="dining-bars" id="dining-bars"></div>
+            </article>
+          </div>
+        </section>
+
+        <section class="method-section" id="method">
+          <div class="method-copy">
+            <span class="section-kicker">METHOD</span>
+            <h2>排名不是单一答案</h2>
+            <p>
+              三项分维度先转为百分位得分，再按当前偏好加权。低样本站点的餐饮维度记为缺失，
+              综合分按剩余维度重新归一化。
+            </p>
+          </div>
+          <div class="weight-visual" id="weight-visual"></div>
+          <div class="method-caveat">
+            <strong>解读边界</strong>
+            <p>
+              通勤为港铁站到站代理，不含校园端步行或巴士接驳；POI 衡量数量便利性，
+              平价餐饮占比为业态代理指标。
+            </p>
+          </div>
+        </section>
+
+        <footer class="page-footer">
+          <span id="meta-summary"></span>
+          <span>POI data © OpenStreetMap contributors</span>
+        </footer>
+      </main>
+    </div>
+
+    <nav class="mobile-nav" aria-label="移动端视图切换">
+      <button class="mobile-tab is-active" type="button" data-view="map">
+        <span>01</span>地图
+      </button>
+      <button class="mobile-tab" type="button" data-view="ranking">
+        <span>02</span>榜单
+      </button>
+      <button class="mobile-tab" type="button" data-view="detail">
+        <span>03</span>证据
+      </button>
+    </nav>
+
+    <script src="demo-data.js"></script>
+    <script src="app.js"></script>
+  </body>
+</html>
