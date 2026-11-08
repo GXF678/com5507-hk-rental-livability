@@ -3,6 +3,7 @@ window.DEMO_DATA = {
     "asOf": "2026-11-05",
     "rentalRows": 9174,
     "rentalEligible": 8761,
+    "rentalStudentProxy": 2141,
     "rentalGeoRows": 3048,
     "poiNodes": 2696,
     "stationCount": 27,
@@ -47,17 +48,18 @@ window.DEMO_DATA = {
           "lat": 22.284,
           "lng": 114.1356,
           "rent": {
-            "medianRent": 20800,
-            "medianPsf": 64.0,
-            "medianSize": 329,
-            "affordableShare": 0.182,
-            "nAnalysis": 329,
+            "medianRent": 13650,
+            "medianPsf": 65.4,
+            "medianSize": 211,
+            "affordableShare": 0.646,
+            "nAnalysis": 82,
+            "lowRentSample": false,
             "quantiles": [
-              12400,
-              16800,
-              20800,
-              26000,
-              35000
+              7909,
+              10050,
+              13650,
+              18000,
+              21180
             ]
           },
           "commute": {
@@ -83,32 +85,32 @@ window.DEMO_DATA = {
             "diningRaw": 65.8
           },
           "componentScores": {
-            "rent": 30.0,
+            "rent": 12.5,
             "commute": 85.0,
             "dining": 25.0
           },
           "scores": {
             "balanced": {
-              "overall": 54.0,
-              "rent": 30.0,
+              "overall": 47.0,
+              "rent": 12.5,
               "commute": 85.0,
               "dining": 25.0
             },
             "budget": {
-              "overall": 43.0,
-              "rent": 30.0,
+              "overall": 32.5,
+              "rent": 12.5,
               "commute": 85.0,
               "dining": 25.0
             },
             "commute": {
-              "overall": 65.2,
-              "rent": 30.0,
+              "overall": 60.9,
+              "rent": 12.5,
               "commute": 85.0,
               "dining": 25.0
             },
             "food": {
-              "overall": 44.5,
-              "rent": 30.0,
+              "overall": 39.2,
+              "rent": 12.5,
               "commute": 85.0,
               "dining": 25.0
             }
@@ -123,17 +125,18 @@ window.DEMO_DATA = {
           "lat": 22.28547,
           "lng": 114.14242,
           "rent": {
-            "medianRent": 20800,
-            "medianPsf": 64.0,
-            "medianSize": 329,
-            "affordableShare": 0.182,
-            "nAnalysis": 329,
+            "medianRent": 13650,
+            "medianPsf": 65.4,
+            "medianSize": 211,
+            "affordableShare": 0.646,
+            "nAnalysis": 82,
+            "lowRentSample": false,
             "quantiles": [
-              12400,
-              16800,
-              20800,
-              26000,
-              35000
+              7909,
+              10050,
+              13650,
+              18000,
+              21180
             ]
           },
           "commute": {
@@ -159,32 +162,32 @@ window.DEMO_DATA = {
             "diningRaw": 68.4
           },
           "componentScores": {
-            "rent": 30.0,
+            "rent": 12.5,
             "commute": 58.8,
             "dining": 50.0
           },
           "scores": {
             "balanced": {
-              "overall": 45.9,
-              "rent": 30.0,
+              "overall": 38.9,
+              "rent": 12.5,
               "commute": 58.8,
               "dining": 50.0
             },
             "budget": {
-              "overall": 40.2,
-              "rent": 30.0,
+              "overall": 29.7,
+              "rent": 12.5,
               "commute": 58.8,
               "dining": 50.0
             },
             "commute": {
-              "overall": 50.7,
-              "rent": 30.0,
+              "overall": 46.3,
+              "rent": 12.5,
               "commute": 58.8,
               "dining": 50.0
             },
             "food": {
-              "overall": 46.6,
-              "rent": 30.0,
+              "overall": 41.4,
+              "rent": 12.5,
               "commute": 58.8,
               "dining": 50.0
             }
@@ -199,17 +202,18 @@ window.DEMO_DATA = {
           "lat": 22.28199,
           "lng": 114.12871,
           "rent": {
-            "medianRent": 22550,
-            "medianPsf": 59.6,
-            "medianSize": 366,
-            "affordableShare": 0.173,
-            "nAnalysis": 266,
+            "medianRent": 12800,
+            "medianPsf": 56.5,
+            "medianSize": 216,
+            "affordableShare": 0.895,
+            "nAnalysis": 38,
+            "lowRentSample": false,
             "quantiles": [
-              13250,
-              16800,
-              22550,
-              30000,
-              39650
+              6000,
+              7850,
+              12800,
+              14325,
+              15090
             ]
           },
           "commute": {
@@ -235,32 +239,32 @@ window.DEMO_DATA = {
             "diningRaw": 52.6
           },
           "componentScores": {
-            "rent": 15.0,
+            "rent": 50.0,
             "commute": 58.8,
             "dining": 0.0
           },
           "scores": {
             "balanced": {
-              "overall": 32.4,
-              "rent": 15.0,
+              "overall": 46.4,
+              "rent": 50.0,
               "commute": 58.8,
               "dining": 0.0
             },
             "budget": {
-              "overall": 23.7,
-              "rent": 15.0,
+              "overall": 44.7,
+              "rent": 50.0,
               "commute": 58.8,
               "dining": 0.0
             },
             "commute": {
-              "overall": 41.9,
-              "rent": 15.0,
+              "overall": 50.7,
+              "rent": 50.0,
               "commute": 58.8,
               "dining": 0.0
             },
             "food": {
-              "overall": 22.1,
-              "rent": 15.0,
+              "overall": 32.6,
+              "rent": 50.0,
               "commute": 58.8,
               "dining": 0.0
             }
@@ -275,17 +279,18 @@ window.DEMO_DATA = {
           "lat": 22.28638,
           "lng": 114.15162,
           "rent": {
-            "medianRent": 19800,
-            "medianPsf": 57.2,
-            "medianSize": 365,
-            "affordableShare": 0.216,
-            "nAnalysis": 264,
+            "medianRent": 12250,
+            "medianPsf": 54.2,
+            "medianSize": 220,
+            "affordableShare": 0.931,
+            "nAnalysis": 58,
+            "lowRentSample": false,
             "quantiles": [
-              11410,
-              16000,
-              19800,
-              26125,
-              34640
+              7420,
+              9650,
+              12250,
+              14000,
+              14800
             ]
           },
           "commute": {
@@ -351,17 +356,18 @@ window.DEMO_DATA = {
           "lat": 22.28194,
           "lng": 114.15818,
           "rent": {
-            "medianRent": 19800,
-            "medianPsf": 57.2,
-            "medianSize": 365,
-            "affordableShare": 0.216,
-            "nAnalysis": 264,
+            "medianRent": 12250,
+            "medianPsf": 54.2,
+            "medianSize": 220,
+            "affordableShare": 0.931,
+            "nAnalysis": 58,
+            "lowRentSample": false,
             "quantiles": [
-              11410,
-              16000,
-              19800,
-              26125,
-              34640
+              7420,
+              9650,
+              12250,
+              14000,
+              14800
             ]
           },
           "commute": {
@@ -434,17 +440,18 @@ window.DEMO_DATA = {
           "lat": 22.4155,
           "lng": 114.2072,
           "rent": {
-            "medianRent": 21400,
-            "medianPsf": 47.1,
-            "medianSize": 472,
-            "affordableShare": 0.239,
-            "nAnalysis": 715,
+            "medianRent": 13000,
+            "medianPsf": 46.9,
+            "medianSize": 273,
+            "affordableShare": 0.982,
+            "nAnalysis": 113,
+            "lowRentSample": false,
             "quantiles": [
-              12880,
-              15500,
-              21400,
-              32000,
-              42000
+              6340,
+              9800,
+              13000,
+              14300,
+              15000
             ]
           },
           "commute": {
@@ -470,32 +477,32 @@ window.DEMO_DATA = {
             "diningRaw": null
           },
           "componentScores": {
-            "rent": 62.5,
+            "rent": 45.0,
             "commute": 85.0,
             "dining": null
           },
           "scores": {
             "balanced": {
-              "overall": 74.4,
-              "rent": 62.5,
+              "overall": 66.2,
+              "rent": 45.0,
               "commute": 85.0,
               "dining": null
             },
             "budget": {
-              "overall": 69.1,
-              "rent": 62.5,
+              "overall": 56.8,
+              "rent": 45.0,
               "commute": 85.0,
               "dining": null
             },
             "commute": {
-              "overall": 78.8,
-              "rent": 62.5,
+              "overall": 73.9,
+              "rent": 45.0,
               "commute": 85.0,
               "dining": null
             },
             "food": {
-              "overall": 73.8,
-              "rent": 62.5,
+              "overall": 65.0,
+              "rent": 45.0,
               "commute": 85.0,
               "dining": null
             }
@@ -510,17 +517,18 @@ window.DEMO_DATA = {
           "lat": 22.3728,
           "lng": 114.1789,
           "rent": {
-            "medianRent": 21400,
-            "medianPsf": 47.1,
-            "medianSize": 472,
-            "affordableShare": 0.239,
-            "nAnalysis": 715,
+            "medianRent": 13000,
+            "medianPsf": 46.9,
+            "medianSize": 273,
+            "affordableShare": 0.982,
+            "nAnalysis": 113,
+            "lowRentSample": false,
             "quantiles": [
-              12880,
-              15500,
-              21400,
-              32000,
-              42000
+              6340,
+              9800,
+              13000,
+              14300,
+              15000
             ]
           },
           "commute": {
@@ -546,32 +554,32 @@ window.DEMO_DATA = {
             "diningRaw": null
           },
           "componentScores": {
-            "rent": 62.5,
+            "rent": 45.0,
             "commute": 32.5,
             "dining": null
           },
           "scores": {
             "balanced": {
-              "overall": 46.6,
-              "rent": 62.5,
+              "overall": 38.4,
+              "rent": 45.0,
               "commute": 32.5,
               "dining": null
             },
             "budget": {
-              "overall": 53.7,
-              "rent": 62.5,
+              "overall": 41.3,
+              "rent": 45.0,
               "commute": 32.5,
               "dining": null
             },
             "commute": {
-              "overall": 40.8,
-              "rent": 62.5,
+              "overall": 36.0,
+              "rent": 45.0,
               "commute": 32.5,
               "dining": null
             },
             "food": {
-              "overall": 47.5,
-              "rent": 62.5,
+              "overall": 38.8,
+              "rent": 45.0,
               "commute": 32.5,
               "dining": null
             }
@@ -586,17 +594,18 @@ window.DEMO_DATA = {
           "lat": 22.38255,
           "lng": 114.1876,
           "rent": {
-            "medianRent": 21400,
-            "medianPsf": 47.1,
-            "medianSize": 472,
-            "affordableShare": 0.239,
-            "nAnalysis": 715,
+            "medianRent": 13000,
+            "medianPsf": 46.9,
+            "medianSize": 273,
+            "affordableShare": 0.982,
+            "nAnalysis": 113,
+            "lowRentSample": false,
             "quantiles": [
-              12880,
-              15500,
-              21400,
-              32000,
-              42000
+              6340,
+              9800,
+              13000,
+              14300,
+              15000
             ]
           },
           "commute": {
@@ -622,32 +631,32 @@ window.DEMO_DATA = {
             "diningRaw": null
           },
           "componentScores": {
-            "rent": 62.5,
+            "rent": 45.0,
             "commute": 50.0,
             "dining": null
           },
           "scores": {
             "balanced": {
-              "overall": 55.9,
-              "rent": 62.5,
+              "overall": 47.6,
+              "rent": 45.0,
               "commute": 50.0,
               "dining": null
             },
             "budget": {
-              "overall": 58.8,
-              "rent": 62.5,
+              "overall": 46.5,
+              "rent": 45.0,
               "commute": 50.0,
               "dining": null
             },
             "commute": {
-              "overall": 53.5,
-              "rent": 62.5,
+              "overall": 48.6,
+              "rent": 45.0,
               "commute": 50.0,
               "dining": null
             },
             "food": {
-              "overall": 56.2,
-              "rent": 62.5,
+              "overall": 47.5,
+              "rent": 45.0,
               "commute": 50.0,
               "dining": null
             }
@@ -662,17 +671,18 @@ window.DEMO_DATA = {
           "lat": 22.3948,
           "lng": 114.198,
           "rent": {
-            "medianRent": 21400,
-            "medianPsf": 47.1,
-            "medianSize": 472,
-            "affordableShare": 0.239,
-            "nAnalysis": 715,
+            "medianRent": 13000,
+            "medianPsf": 46.9,
+            "medianSize": 273,
+            "affordableShare": 0.982,
+            "nAnalysis": 113,
+            "lowRentSample": false,
             "quantiles": [
-              12880,
-              15500,
-              21400,
-              32000,
-              42000
+              6340,
+              9800,
+              13000,
+              14300,
+              15000
             ]
           },
           "commute": {
@@ -698,32 +708,32 @@ window.DEMO_DATA = {
             "diningRaw": null
           },
           "componentScores": {
-            "rent": 62.5,
+            "rent": 45.0,
             "commute": 67.5,
             "dining": null
           },
           "scores": {
             "balanced": {
-              "overall": 65.1,
-              "rent": 62.5,
+              "overall": 56.9,
+              "rent": 45.0,
               "commute": 67.5,
               "dining": null
             },
             "budget": {
-              "overall": 64.0,
-              "rent": 62.5,
+              "overall": 51.6,
+              "rent": 45.0,
               "commute": 67.5,
               "dining": null
             },
             "commute": {
-              "overall": 66.1,
-              "rent": 62.5,
+              "overall": 61.2,
+              "rent": 45.0,
               "commute": 67.5,
               "dining": null
             },
             "food": {
-              "overall": 65.0,
-              "rent": 62.5,
+              "overall": 56.2,
+              "rent": 45.0,
               "commute": 67.5,
               "dining": null
             }
@@ -738,17 +748,18 @@ window.DEMO_DATA = {
           "lat": 22.33687,
           "lng": 114.17622,
           "rent": {
-            "medianRent": 46000,
-            "medianPsf": 48.8,
-            "medianSize": 1027,
-            "affordableShare": 0.036,
-            "nAnalysis": 110,
+            "medianRent": 10400,
+            "medianPsf": 48.5,
+            "medianSize": 218,
+            "affordableShare": 1.0,
+            "nAnalysis": 4,
+            "lowRentSample": true,
             "quantiles": [
-              28900,
-              36125,
-              46000,
-              70000,
-              78000
+              5512,
+              6340,
+              10400,
+              14125,
+              14350
             ]
           },
           "commute": {
@@ -774,32 +785,32 @@ window.DEMO_DATA = {
             "diningRaw": null
           },
           "componentScores": {
-            "rent": 0.0,
+            "rent": null,
             "commute": 15.0,
             "dining": null
           },
           "scores": {
             "balanced": {
-              "overall": 7.9,
-              "rent": 0.0,
+              "overall": 15.0,
+              "rent": null,
               "commute": 15.0,
               "dining": null
             },
             "budget": {
-              "overall": 4.4,
-              "rent": 0.0,
+              "overall": 15.0,
+              "rent": null,
               "commute": 15.0,
               "dining": null
             },
             "commute": {
-              "overall": 10.8,
-              "rent": 0.0,
+              "overall": 15.0,
+              "rent": null,
               "commute": 15.0,
               "dining": null
             },
             "food": {
-              "overall": 7.5,
-              "rent": 0.0,
+              "overall": 15.0,
+              "rent": null,
               "commute": 15.0,
               "dining": null
             }
@@ -821,17 +832,18 @@ window.DEMO_DATA = {
           "lat": 22.31885,
           "lng": 114.269,
           "rent": {
-            "medianRent": 22500,
-            "medianPsf": 43.0,
-            "medianSize": 541,
-            "affordableShare": 0.037,
-            "nAnalysis": 924,
+            "medianRent": 12000,
+            "medianPsf": 43.8,
+            "medianSize": 375,
+            "affordableShare": 0.864,
+            "nAnalysis": 22,
+            "lowRentSample": false,
             "quantiles": [
-              16590,
-              19000,
-              22500,
-              28000,
-              36940
+              6600,
+              8600,
+              12000,
+              14650,
+              26700
             ]
           },
           "commute": {
@@ -897,17 +909,18 @@ window.DEMO_DATA = {
           "lat": 22.322,
           "lng": 114.258,
           "rent": {
-            "medianRent": 22500,
-            "medianPsf": 43.0,
-            "medianSize": 541,
-            "affordableShare": 0.037,
-            "nAnalysis": 924,
+            "medianRent": 12000,
+            "medianPsf": 43.8,
+            "medianSize": 375,
+            "affordableShare": 0.864,
+            "nAnalysis": 22,
+            "lowRentSample": false,
             "quantiles": [
-              16590,
-              19000,
-              22500,
-              28000,
-              36940
+              6600,
+              8600,
+              12000,
+              14650,
+              26700
             ]
           },
           "commute": {
@@ -973,17 +986,18 @@ window.DEMO_DATA = {
           "lat": 22.3072,
           "lng": 114.2601,
           "rent": {
-            "medianRent": 22500,
-            "medianPsf": 43.0,
-            "medianSize": 541,
-            "affordableShare": 0.037,
-            "nAnalysis": 924,
+            "medianRent": 12000,
+            "medianPsf": 43.8,
+            "medianSize": 375,
+            "affordableShare": 0.864,
+            "nAnalysis": 22,
+            "lowRentSample": false,
             "quantiles": [
-              16590,
-              19000,
-              22500,
-              28000,
-              36940
+              6600,
+              8600,
+              12000,
+              14650,
+              26700
             ]
           },
           "commute": {
@@ -1056,17 +1070,18 @@ window.DEMO_DATA = {
           "lat": 22.33687,
           "lng": 114.17622,
           "rent": {
-            "medianRent": 46000,
-            "medianPsf": 48.8,
-            "medianSize": 1027,
-            "affordableShare": 0.036,
-            "nAnalysis": 110,
+            "medianRent": 10400,
+            "medianPsf": 48.5,
+            "medianSize": 218,
+            "affordableShare": 1.0,
+            "nAnalysis": 4,
+            "lowRentSample": true,
             "quantiles": [
-              28900,
-              36125,
-              46000,
-              70000,
-              78000
+              5512,
+              6340,
+              10400,
+              14125,
+              14350
             ]
           },
           "commute": {
@@ -1092,32 +1107,32 @@ window.DEMO_DATA = {
             "diningRaw": null
           },
           "componentScores": {
-            "rent": 6.0,
+            "rent": null,
             "commute": 87.0,
             "dining": null
           },
           "scores": {
             "balanced": {
-              "overall": 48.9,
-              "rent": 6.0,
+              "overall": 87.0,
+              "rent": null,
               "commute": 87.0,
               "dining": null
             },
             "budget": {
-              "overall": 29.8,
-              "rent": 6.0,
+              "overall": 87.0,
+              "rent": null,
               "commute": 87.0,
               "dining": null
             },
             "commute": {
-              "overall": 64.5,
-              "rent": 6.0,
+              "overall": 87.0,
+              "rent": null,
               "commute": 87.0,
               "dining": null
             },
             "food": {
-              "overall": 46.5,
-              "rent": 6.0,
+              "overall": 87.0,
+              "rent": null,
               "commute": 87.0,
               "dining": null
             }
@@ -1132,17 +1147,18 @@ window.DEMO_DATA = {
           "lat": 22.33182,
           "lng": 114.16842,
           "rent": {
-            "medianRent": 13000,
-            "medianPsf": 44.9,
-            "medianSize": 302,
-            "affordableShare": 0.691,
-            "nAnalysis": 609,
+            "medianRent": 8500,
+            "medianPsf": 45.3,
+            "medianSize": 180,
+            "affordableShare": 0.996,
+            "nAnalysis": 275,
+            "lowRentSample": false,
             "quantiles": [
-              5500,
+              4500,
+              5800,
               8500,
-              13000,
-              19800,
-              30000
+              12400,
+              14000
             ]
           },
           "commute": {
@@ -1208,17 +1224,18 @@ window.DEMO_DATA = {
           "lat": 22.32445,
           "lng": 114.16846,
           "rent": {
-            "medianRent": 13000,
-            "medianPsf": 44.9,
-            "medianSize": 314,
-            "affordableShare": 0.613,
-            "nAnalysis": 274,
+            "medianRent": 8000,
+            "medianPsf": 47.8,
+            "medianSize": 160,
+            "affordableShare": 1.0,
+            "nAnalysis": 109,
+            "lowRentSample": false,
             "quantiles": [
-              6630,
-              8500,
-              13000,
-              16575,
-              21560
+              5000,
+              6700,
+              8000,
+              9800,
+              12800
             ]
           },
           "commute": {
@@ -1244,32 +1261,32 @@ window.DEMO_DATA = {
             "diningRaw": 86.1
           },
           "componentScores": {
-            "rent": 68.5,
+            "rent": 80.5,
             "commute": 59.0,
             "dining": 66.7
           },
           "scores": {
             "balanced": {
-              "overall": 64.0,
-              "rent": 68.5,
+              "overall": 68.8,
+              "rent": 80.5,
               "commute": 59.0,
               "dining": 66.7
             },
             "budget": {
-              "overall": 65.9,
-              "rent": 68.5,
+              "overall": 73.1,
+              "rent": 80.5,
               "commute": 59.0,
               "dining": 66.7
             },
             "commute": {
-              "overall": 62.1,
-              "rent": 68.5,
+              "overall": 65.1,
+              "rent": 80.5,
               "commute": 59.0,
               "dining": 66.7
             },
             "food": {
-              "overall": 64.9,
-              "rent": 68.5,
+              "overall": 68.5,
+              "rent": 80.5,
               "commute": 59.0,
               "dining": 66.7
             }
@@ -1284,17 +1301,18 @@ window.DEMO_DATA = {
           "lat": 22.33061,
           "lng": 114.16221,
           "rent": {
-            "medianRent": 13000,
-            "medianPsf": 44.9,
-            "medianSize": 302,
-            "affordableShare": 0.691,
-            "nAnalysis": 609,
+            "medianRent": 8500,
+            "medianPsf": 45.3,
+            "medianSize": 180,
+            "affordableShare": 0.996,
+            "nAnalysis": 275,
+            "lowRentSample": false,
             "quantiles": [
-              5500,
+              4500,
+              5800,
               8500,
-              13000,
-              19800,
-              30000
+              12400,
+              14000
             ]
           },
           "commute": {
@@ -1360,17 +1378,18 @@ window.DEMO_DATA = {
           "lat": 22.31947,
           "lng": 114.16931,
           "rent": {
-            "medianRent": 13000,
-            "medianPsf": 49.5,
-            "medianSize": 253,
-            "affordableShare": 0.693,
-            "nAnalysis": 742,
+            "medianRent": 9200,
+            "medianPsf": 51.1,
+            "medianSize": 180,
+            "affordableShare": 0.972,
+            "nAnalysis": 353,
+            "lowRentSample": false,
             "quantiles": [
-              7000,
+              6300,
+              7500,
               9200,
-              13000,
-              15950,
-              20770
+              11800,
+              14500
             ]
           },
           "commute": {
@@ -1396,32 +1415,32 @@ window.DEMO_DATA = {
             "diningRaw": 92.5
           },
           "componentScores": {
-            "rent": 53.5,
+            "rent": 22.0,
             "commute": 31.0,
             "dining": 100.0
           },
           "scores": {
             "balanced": {
-              "overall": 50.4,
-              "rent": 53.5,
+              "overall": 37.8,
+              "rent": 22.0,
               "commute": 31.0,
               "dining": 100.0
             },
             "budget": {
-              "overall": 54.9,
-              "rent": 53.5,
+              "overall": 36.0,
+              "rent": 22.0,
               "commute": 31.0,
               "dining": 100.0
             },
             "commute": {
-              "overall": 43.5,
-              "rent": 53.5,
+              "overall": 35.7,
+              "rent": 22.0,
               "commute": 31.0,
               "dining": 100.0
             },
             "food": {
-              "overall": 65.3,
-              "rent": 53.5,
+              "overall": 55.9,
+              "rent": 22.0,
               "commute": 31.0,
               "dining": 100.0
             }
@@ -1436,17 +1455,18 @@ window.DEMO_DATA = {
           "lat": 22.3728,
           "lng": 114.1789,
           "rent": {
-            "medianRent": 21400,
-            "medianPsf": 47.1,
-            "medianSize": 472,
-            "affordableShare": 0.239,
-            "nAnalysis": 715,
+            "medianRent": 13000,
+            "medianPsf": 46.9,
+            "medianSize": 273,
+            "affordableShare": 0.982,
+            "nAnalysis": 113,
+            "lowRentSample": false,
             "quantiles": [
-              12880,
-              15500,
-              21400,
-              32000,
-              42000
+              6340,
+              9800,
+              13000,
+              14300,
+              15000
             ]
           },
           "commute": {
@@ -1472,32 +1492,32 @@ window.DEMO_DATA = {
             "diningRaw": null
           },
           "componentScores": {
-            "rent": 26.0,
+            "rent": 21.0,
             "commute": 45.0,
             "dining": null
           },
           "scores": {
             "balanced": {
-              "overall": 36.1,
-              "rent": 26.0,
+              "overall": 33.7,
+              "rent": 21.0,
               "commute": 45.0,
               "dining": null
             },
             "budget": {
-              "overall": 31.6,
-              "rent": 26.0,
+              "overall": 28.1,
+              "rent": 21.0,
               "commute": 45.0,
               "dining": null
             },
             "commute": {
-              "overall": 39.7,
-              "rent": 26.0,
+              "overall": 38.3,
+              "rent": 21.0,
               "commute": 45.0,
               "dining": null
             },
             "food": {
-              "overall": 35.5,
-              "rent": 26.0,
+              "overall": 33.0,
+              "rent": 21.0,
               "commute": 45.0,
               "dining": null
             }
@@ -1519,17 +1539,18 @@ window.DEMO_DATA = {
           "lat": 22.303,
           "lng": 114.181,
           "rent": {
-            "medianRent": 19000,
-            "medianPsf": 50.8,
-            "medianSize": 391,
-            "affordableShare": 0.252,
-            "nAnalysis": 619,
+            "medianRent": 13500,
+            "medianPsf": 58.2,
+            "medianSize": 216,
+            "affordableShare": 0.957,
+            "nAnalysis": 117,
+            "lowRentSample": false,
             "quantiles": [
-              13000,
-              15000,
-              19000,
-              26500,
-              40560
+              6500,
+              10800,
+              13500,
+              14500,
+              14800
             ]
           },
           "commute": {
@@ -1555,32 +1576,32 @@ window.DEMO_DATA = {
             "diningRaw": 73.3
           },
           "componentScores": {
-            "rent": 32.5,
+            "rent": 18.1,
             "commute": 90.0,
             "dining": 50.0
           },
           "scores": {
             "balanced": {
-              "overall": 61.0,
-              "rent": 32.5,
+              "overall": 55.2,
+              "rent": 18.1,
               "commute": 90.0,
               "dining": 50.0
             },
             "budget": {
-              "overall": 49.5,
-              "rent": 32.5,
+              "overall": 40.9,
+              "rent": 18.1,
               "commute": 90.0,
               "dining": 50.0
             },
             "commute": {
-              "overall": 71.6,
-              "rent": 32.5,
+              "overall": 68.0,
+              "rent": 18.1,
               "commute": 90.0,
               "dining": 50.0
             },
             "food": {
-              "overall": 56.8,
-              "rent": 32.5,
+              "overall": 52.4,
+              "rent": 18.1,
               "commute": 90.0,
               "dining": 50.0
             }
@@ -1595,17 +1616,18 @@ window.DEMO_DATA = {
           "lat": 22.3094,
           "lng": 114.1829,
           "rent": {
-            "medianRent": 35000,
-            "medianPsf": 53.0,
-            "medianSize": 740,
-            "affordableShare": 0.094,
-            "nAnalysis": 470,
+            "medianRent": 13500,
+            "medianPsf": 59.4,
+            "medianSize": 209,
+            "affordableShare": 0.767,
+            "nAnalysis": 43,
+            "lowRentSample": false,
             "quantiles": [
-              15500,
-              22000,
-              35000,
-              57375,
-              80000
+              8300,
+              9800,
+              13500,
+              14900,
+              16000
             ]
           },
           "commute": {
@@ -1631,32 +1653,32 @@ window.DEMO_DATA = {
             "diningRaw": 60.9
           },
           "componentScores": {
-            "rent": 7.5,
+            "rent": 6.9,
             "commute": 72.5,
             "dining": 25.0
           },
           "scores": {
             "balanced": {
-              "overall": 39.4,
-              "rent": 7.5,
+              "overall": 39.1,
+              "rent": 6.9,
               "commute": 72.5,
               "dining": 25.0
             },
             "budget": {
-              "overall": 26.4,
-              "rent": 7.5,
+              "overall": 26.0,
+              "rent": 6.9,
               "commute": 72.5,
               "dining": 25.0
             },
             "commute": {
-              "overall": 51.5,
-              "rent": 7.5,
+              "overall": 51.3,
+              "rent": 6.9,
               "commute": 72.5,
               "dining": 25.0
             },
             "food": {
-              "overall": 34.0,
-              "rent": 7.5,
+              "overall": 33.8,
+              "rent": 6.9,
               "commute": 72.5,
               "dining": 25.0
             }
@@ -1671,17 +1693,18 @@ window.DEMO_DATA = {
           "lat": 22.29764,
           "lng": 114.17221,
           "rent": {
-            "medianRent": 16000,
-            "medianPsf": 55.4,
-            "medianSize": 343,
-            "affordableShare": 0.477,
-            "nAnalysis": 643,
+            "medianRent": 9200,
+            "medianPsf": 55.3,
+            "medianSize": 170,
+            "affordableShare": 0.975,
+            "nAnalysis": 281,
+            "lowRentSample": false,
             "quantiles": [
+              6800,
               8000,
-              9500,
-              16000,
-              30000,
-              55000
+              9200,
+              10500,
+              14000
             ]
           },
           "commute": {
@@ -1707,32 +1730,32 @@ window.DEMO_DATA = {
             "diningRaw": 79.8
           },
           "componentScores": {
-            "rent": 38.8,
+            "rent": 74.4,
             "commute": 7.5,
             "dining": 75.0
           },
           "scores": {
             "balanced": {
-              "overall": 30.1,
-              "rent": 38.8,
+              "overall": 44.4,
+              "rent": 74.4,
               "commute": 7.5,
               "dining": 75.0
             },
             "budget": {
-              "overall": 36.4,
-              "rent": 38.8,
+              "overall": 57.8,
+              "rent": 74.4,
               "commute": 7.5,
               "dining": 75.0
             },
             "commute": {
-              "overall": 22.1,
-              "rent": 38.8,
+              "overall": 31.0,
+              "rent": 74.4,
               "commute": 7.5,
               "dining": 75.0
             },
             "food": {
-              "overall": 43.9,
-              "rent": 38.8,
+              "overall": 54.6,
+              "rent": 74.4,
               "commute": 7.5,
               "dining": 75.0
             }
@@ -1747,17 +1770,18 @@ window.DEMO_DATA = {
           "lat": 22.31947,
           "lng": 114.16931,
           "rent": {
-            "medianRent": 13000,
-            "medianPsf": 49.5,
-            "medianSize": 253,
-            "affordableShare": 0.693,
-            "nAnalysis": 742,
+            "medianRent": 9200,
+            "medianPsf": 51.1,
+            "medianSize": 180,
+            "affordableShare": 0.972,
+            "nAnalysis": 353,
+            "lowRentSample": false,
             "quantiles": [
-              7000,
+              6300,
+              7500,
               9200,
-              13000,
-              15950,
-              20770
+              11800,
+              14500
             ]
           },
           "commute": {
@@ -1783,32 +1807,32 @@ window.DEMO_DATA = {
             "diningRaw": 92.5
           },
           "componentScores": {
-            "rent": 92.5,
+            "rent": 78.1,
             "commute": 25.0,
             "dining": 100.0
           },
           "scores": {
             "balanced": {
-              "overall": 63.2,
-              "rent": 92.5,
+              "overall": 57.5,
+              "rent": 78.1,
               "commute": 25.0,
               "dining": 100.0
             },
             "budget": {
-              "overall": 76.8,
-              "rent": 92.5,
+              "overall": 68.1,
+              "rent": 78.1,
               "commute": 25.0,
               "dining": 100.0
             },
             "commute": {
-              "overall": 49.4,
-              "rent": 92.5,
+              "overall": 45.8,
+              "rent": 78.1,
               "commute": 25.0,
               "dining": 100.0
             },
             "food": {
-              "overall": 75.2,
-              "rent": 92.5,
+              "overall": 70.9,
+              "rent": 78.1,
               "commute": 25.0,
               "dining": 100.0
             }
@@ -1823,17 +1847,18 @@ window.DEMO_DATA = {
           "lat": 22.3154,
           "lng": 114.1873,
           "rent": {
-            "medianRent": 15800,
-            "medianPsf": 45.7,
-            "medianSize": 336,
-            "affordableShare": 0.442,
-            "nAnalysis": 362,
+            "medianRent": 9800,
+            "medianPsf": 42.8,
+            "medianSize": 221,
+            "affordableShare": 0.979,
+            "nAnalysis": 96,
+            "lowRentSample": false,
             "quantiles": [
-              7500,
-              12900,
-              15800,
-              18400,
-              24200
+              5350,
+              6500,
+              9800,
+              13500,
+              14500
             ]
           },
           "commute": {
@@ -1859,32 +1884,32 @@ window.DEMO_DATA = {
             "diningRaw": 54.1
           },
           "componentScores": {
-            "rent": 78.8,
+            "rent": 72.5,
             "commute": 55.0,
             "dining": 0.0
           },
           "scores": {
             "balanced": {
-              "overall": 56.2,
-              "rent": 78.8,
+              "overall": 53.8,
+              "rent": 72.5,
               "commute": 55.0,
               "dining": 0.0
             },
             "budget": {
-              "overall": 61.0,
-              "rent": 78.8,
+              "overall": 57.2,
+              "rent": 72.5,
               "commute": 55.0,
               "dining": 0.0
             },
             "commute": {
-              "overall": 55.4,
-              "rent": 78.8,
+              "overall": 53.9,
+              "rent": 72.5,
               "commute": 55.0,
               "dining": 0.0
             },
             "food": {
-              "overall": 40.1,
-              "rent": 78.8,
+              "overall": 38.2,
+              "rent": 72.5,
               "commute": 55.0,
               "dining": 0.0
             }
@@ -1906,17 +1931,18 @@ window.DEMO_DATA = {
           "lat": 22.33687,
           "lng": 114.17622,
           "rent": {
-            "medianRent": 46000,
-            "medianPsf": 48.8,
-            "medianSize": 1027,
-            "affordableShare": 0.036,
-            "nAnalysis": 110,
+            "medianRent": 10400,
+            "medianPsf": 48.5,
+            "medianSize": 218,
+            "affordableShare": 1.0,
+            "nAnalysis": 4,
+            "lowRentSample": true,
             "quantiles": [
-              28900,
-              36125,
-              46000,
-              70000,
-              78000
+              5512,
+              6340,
+              10400,
+              14125,
+              14350
             ]
           },
           "commute": {
@@ -1942,32 +1968,32 @@ window.DEMO_DATA = {
             "diningRaw": null
           },
           "componentScores": {
-            "rent": 6.0,
+            "rent": null,
             "commute": 87.0,
             "dining": null
           },
           "scores": {
             "balanced": {
-              "overall": 48.9,
-              "rent": 6.0,
+              "overall": 87.0,
+              "rent": null,
               "commute": 87.0,
               "dining": null
             },
             "budget": {
-              "overall": 29.8,
-              "rent": 6.0,
+              "overall": 87.0,
+              "rent": null,
               "commute": 87.0,
               "dining": null
             },
             "commute": {
-              "overall": 64.5,
-              "rent": 6.0,
+              "overall": 87.0,
+              "rent": null,
               "commute": 87.0,
               "dining": null
             },
             "food": {
-              "overall": 46.5,
-              "rent": 6.0,
+              "overall": 87.0,
+              "rent": null,
               "commute": 87.0,
               "dining": null
             }
@@ -1982,17 +2008,18 @@ window.DEMO_DATA = {
           "lat": 22.33182,
           "lng": 114.16842,
           "rent": {
-            "medianRent": 13000,
-            "medianPsf": 44.9,
-            "medianSize": 302,
-            "affordableShare": 0.691,
-            "nAnalysis": 609,
+            "medianRent": 8500,
+            "medianPsf": 45.3,
+            "medianSize": 180,
+            "affordableShare": 0.996,
+            "nAnalysis": 275,
+            "lowRentSample": false,
             "quantiles": [
-              5500,
+              4500,
+              5800,
               8500,
-              13000,
-              19800,
-              30000
+              12400,
+              14000
             ]
           },
           "commute": {
@@ -2058,17 +2085,18 @@ window.DEMO_DATA = {
           "lat": 22.32445,
           "lng": 114.16846,
           "rent": {
-            "medianRent": 13000,
-            "medianPsf": 44.9,
-            "medianSize": 314,
-            "affordableShare": 0.613,
-            "nAnalysis": 274,
+            "medianRent": 8000,
+            "medianPsf": 47.8,
+            "medianSize": 160,
+            "affordableShare": 1.0,
+            "nAnalysis": 109,
+            "lowRentSample": false,
             "quantiles": [
-              6630,
-              8500,
-              13000,
-              16575,
-              21560
+              5000,
+              6700,
+              8000,
+              9800,
+              12800
             ]
           },
           "commute": {
@@ -2094,32 +2122,32 @@ window.DEMO_DATA = {
             "diningRaw": 86.1
           },
           "componentScores": {
-            "rent": 68.5,
+            "rent": 80.5,
             "commute": 59.0,
             "dining": 66.7
           },
           "scores": {
             "balanced": {
-              "overall": 64.0,
-              "rent": 68.5,
+              "overall": 68.8,
+              "rent": 80.5,
               "commute": 59.0,
               "dining": 66.7
             },
             "budget": {
-              "overall": 65.9,
-              "rent": 68.5,
+              "overall": 73.1,
+              "rent": 80.5,
               "commute": 59.0,
               "dining": 66.7
             },
             "commute": {
-              "overall": 62.1,
-              "rent": 68.5,
+              "overall": 65.1,
+              "rent": 80.5,
               "commute": 59.0,
               "dining": 66.7
             },
             "food": {
-              "overall": 64.9,
-              "rent": 68.5,
+              "overall": 68.5,
+              "rent": 80.5,
               "commute": 59.0,
               "dining": 66.7
             }
@@ -2134,17 +2162,18 @@ window.DEMO_DATA = {
           "lat": 22.33061,
           "lng": 114.16221,
           "rent": {
-            "medianRent": 13000,
-            "medianPsf": 44.9,
-            "medianSize": 302,
-            "affordableShare": 0.691,
-            "nAnalysis": 609,
+            "medianRent": 8500,
+            "medianPsf": 45.3,
+            "medianSize": 180,
+            "affordableShare": 0.996,
+            "nAnalysis": 275,
+            "lowRentSample": false,
             "quantiles": [
-              5500,
+              4500,
+              5800,
               8500,
-              13000,
-              19800,
-              30000
+              12400,
+              14000
             ]
           },
           "commute": {
@@ -2210,17 +2239,18 @@ window.DEMO_DATA = {
           "lat": 22.31947,
           "lng": 114.16931,
           "rent": {
-            "medianRent": 13000,
-            "medianPsf": 49.5,
-            "medianSize": 253,
-            "affordableShare": 0.693,
-            "nAnalysis": 742,
+            "medianRent": 9200,
+            "medianPsf": 51.1,
+            "medianSize": 180,
+            "affordableShare": 0.972,
+            "nAnalysis": 353,
+            "lowRentSample": false,
             "quantiles": [
-              7000,
+              6300,
+              7500,
               9200,
-              13000,
-              15950,
-              20770
+              11800,
+              14500
             ]
           },
           "commute": {
@@ -2246,32 +2276,32 @@ window.DEMO_DATA = {
             "diningRaw": 92.5
           },
           "componentScores": {
-            "rent": 53.5,
+            "rent": 22.0,
             "commute": 31.0,
             "dining": 100.0
           },
           "scores": {
             "balanced": {
-              "overall": 50.4,
-              "rent": 53.5,
+              "overall": 37.8,
+              "rent": 22.0,
               "commute": 31.0,
               "dining": 100.0
             },
             "budget": {
-              "overall": 54.9,
-              "rent": 53.5,
+              "overall": 36.0,
+              "rent": 22.0,
               "commute": 31.0,
               "dining": 100.0
             },
             "commute": {
-              "overall": 43.5,
-              "rent": 53.5,
+              "overall": 35.7,
+              "rent": 22.0,
               "commute": 31.0,
               "dining": 100.0
             },
             "food": {
-              "overall": 65.3,
-              "rent": 53.5,
+              "overall": 55.9,
+              "rent": 22.0,
               "commute": 31.0,
               "dining": 100.0
             }
@@ -2286,17 +2316,18 @@ window.DEMO_DATA = {
           "lat": 22.3728,
           "lng": 114.1789,
           "rent": {
-            "medianRent": 21400,
-            "medianPsf": 47.1,
-            "medianSize": 472,
-            "affordableShare": 0.239,
-            "nAnalysis": 715,
+            "medianRent": 13000,
+            "medianPsf": 46.9,
+            "medianSize": 273,
+            "affordableShare": 0.982,
+            "nAnalysis": 113,
+            "lowRentSample": false,
             "quantiles": [
-              12880,
-              15500,
-              21400,
-              32000,
-              42000
+              6340,
+              9800,
+              13000,
+              14300,
+              15000
             ]
           },
           "commute": {
@@ -2322,32 +2353,32 @@ window.DEMO_DATA = {
             "diningRaw": null
           },
           "componentScores": {
-            "rent": 26.0,
+            "rent": 21.0,
             "commute": 45.0,
             "dining": null
           },
           "scores": {
             "balanced": {
-              "overall": 36.1,
-              "rent": 26.0,
+              "overall": 33.7,
+              "rent": 21.0,
               "commute": 45.0,
               "dining": null
             },
             "budget": {
-              "overall": 31.6,
-              "rent": 26.0,
+              "overall": 28.1,
+              "rent": 21.0,
               "commute": 45.0,
               "dining": null
             },
             "commute": {
-              "overall": 39.7,
-              "rent": 26.0,
+              "overall": 38.3,
+              "rent": 21.0,
               "commute": 45.0,
               "dining": null
             },
             "food": {
-              "overall": 35.5,
-              "rent": 26.0,
+              "overall": 33.0,
+              "rent": 21.0,
               "commute": 45.0,
               "dining": null
             }
@@ -2369,17 +2400,18 @@ window.DEMO_DATA = {
           "lat": 22.4115,
           "lng": 113.978,
           "rent": {
-            "medianRent": 12800,
-            "medianPsf": 30.9,
-            "medianSize": 424,
-            "affordableShare": 0.746,
-            "nAnalysis": 393,
+            "medianRent": 9900,
+            "medianPsf": 36.3,
+            "medianSize": 300,
+            "affordableShare": 1.0,
+            "nAnalysis": 110,
+            "lowRentSample": false,
             "quantiles": [
-              7960,
-              11000,
-              12800,
-              15200,
-              18460
+              4800,
+              6850,
+              9900,
+              12500,
+              13200
             ]
           },
           "commute": {
@@ -2405,32 +2437,32 @@ window.DEMO_DATA = {
             "diningRaw": 35.7
           },
           "componentScores": {
-            "rent": 90.0,
+            "rent": 59.2,
             "commute": 85.0,
             "dining": 25.0
           },
           "scores": {
             "balanced": {
-              "overall": 78.0,
-              "rent": 90.0,
+              "overall": 65.7,
+              "rent": 59.2,
               "commute": 85.0,
               "dining": 25.0
             },
             "budget": {
-              "overall": 79.0,
-              "rent": 90.0,
+              "overall": 60.5,
+              "rent": 59.2,
               "commute": 85.0,
               "dining": 25.0
             },
             "commute": {
-              "overall": 80.3,
-              "rent": 90.0,
+              "overall": 72.5,
+              "rent": 59.2,
               "commute": 85.0,
               "dining": 25.0
             },
             "food": {
-              "overall": 62.5,
-              "rent": 90.0,
+              "overall": 53.3,
+              "rent": 59.2,
               "commute": 85.0,
               "dining": 25.0
             }
@@ -2445,17 +2477,18 @@ window.DEMO_DATA = {
           "lat": 22.3945,
           "lng": 113.9728,
           "rent": {
-            "medianRent": 13500,
-            "medianPsf": 31.1,
-            "medianSize": 455,
-            "affordableShare": 0.622,
-            "nAnalysis": 669,
+            "medianRent": 10300,
+            "medianPsf": 35.9,
+            "medianSize": 308,
+            "affordableShare": 0.978,
+            "nAnalysis": 185,
+            "lowRentSample": false,
             "quantiles": [
-              9000,
-              11300,
-              13500,
-              17500,
-              28400
+              5240,
+              8500,
+              10300,
+              12100,
+              13120
             ]
           },
           "commute": {
@@ -2481,32 +2514,32 @@ window.DEMO_DATA = {
             "diningRaw": 44.8
           },
           "componentScores": {
-            "rent": 51.7,
+            "rent": 43.3,
             "commute": 61.7,
             "dining": 100.0
           },
           "scores": {
             "balanced": {
-              "overall": 63.4,
-              "rent": 51.7,
+              "overall": 60.1,
+              "rent": 43.3,
               "commute": 61.7,
               "dining": 100.0
             },
             "budget": {
-              "overall": 61.4,
-              "rent": 51.7,
+              "overall": 56.4,
+              "rent": 43.3,
               "commute": 61.7,
               "dining": 100.0
             },
             "commute": {
-              "overall": 63.0,
-              "rent": 51.7,
+              "overall": 60.9,
+              "rent": 43.3,
               "commute": 61.7,
               "dining": 100.0
             },
             "food": {
-              "overall": 74.0,
-              "rent": 51.7,
+              "overall": 71.5,
+              "rent": 43.3,
               "commute": 61.7,
               "dining": 100.0
             }
@@ -2521,17 +2554,18 @@ window.DEMO_DATA = {
           "lat": 22.4593,
           "lng": 114.0045,
           "rent": {
-            "medianRent": 14250,
-            "medianPsf": 28.9,
-            "medianSize": 475,
-            "affordableShare": 0.684,
-            "nAnalysis": 244,
+            "medianRent": 12400,
+            "medianPsf": 38.8,
+            "medianSize": 303,
+            "affordableShare": 1.0,
+            "nAnalysis": 43,
+            "lowRentSample": false,
             "quantiles": [
-              8720,
-              12500,
-              14250,
-              15925,
-              18000
+              5900,
+              7200,
+              12400,
+              13250,
+              14000
             ]
           },
           "commute": {
@@ -2557,32 +2591,32 @@ window.DEMO_DATA = {
             "diningRaw": null
           },
           "componentScores": {
-            "rent": 58.3,
+            "rent": 12.5,
             "commute": 38.3,
             "dining": null
           },
           "scores": {
             "balanced": {
-              "overall": 47.7,
-              "rent": 58.3,
+              "overall": 26.2,
+              "rent": 12.5,
               "commute": 38.3,
               "dining": null
             },
             "budget": {
-              "overall": 52.4,
-              "rent": 58.3,
+              "overall": 20.1,
+              "rent": 12.5,
               "commute": 38.3,
               "dining": null
             },
             "commute": {
-              "overall": 43.9,
-              "rent": 58.3,
+              "overall": 31.2,
+              "rent": 12.5,
               "commute": 38.3,
               "dining": null
             },
             "food": {
-              "overall": 48.3,
-              "rent": 58.3,
+              "overall": 25.4,
+              "rent": 12.5,
               "commute": 38.3,
               "dining": null
             }
@@ -2597,17 +2631,18 @@ window.DEMO_DATA = {
           "lat": 22.4449,
           "lng": 114.035,
           "rent": {
-            "medianRent": 15000,
-            "medianPsf": 33.3,
-            "medianSize": 475,
-            "affordableShare": 0.506,
-            "nAnalysis": 859,
+            "medianRent": 8900,
+            "medianPsf": 34.0,
+            "medianSize": 286,
+            "affordableShare": 0.975,
+            "nAnalysis": 199,
+            "lowRentSample": false,
             "quantiles": [
-              6980,
-              10500,
-              15000,
-              20800,
-              32000
+              4500,
+              5700,
+              8900,
+              11000,
+              13800
             ]
           },
           "commute": {
@@ -2633,32 +2668,32 @@ window.DEMO_DATA = {
             "diningRaw": 35.7
           },
           "componentScores": {
-            "rent": 0.0,
+            "rent": 85.0,
             "commute": 15.0,
             "dining": 25.0
           },
           "scores": {
             "balanced": {
-              "overall": 10.5,
-              "rent": 0.0,
+              "overall": 44.5,
+              "rent": 85.0,
               "commute": 15.0,
               "dining": 25.0
             },
             "budget": {
-              "overall": 7.5,
-              "rent": 0.0,
+              "overall": 58.5,
+              "rent": 85.0,
               "commute": 15.0,
               "dining": 25.0
             },
             "commute": {
-              "overall": 12.2,
-              "rent": 0.0,
+              "overall": 33.5,
+              "rent": 85.0,
               "commute": 15.0,
               "dining": 25.0
             },
             "food": {
-              "overall": 14.5,
-              "rent": 0.0,
+              "overall": 40.0,
+              "rent": 85.0,
               "commute": 15.0,
               "dining": 25.0
             }
@@ -2680,17 +2715,18 @@ window.DEMO_DATA = {
           "lat": 22.44455,
           "lng": 114.169,
           "rent": {
-            "medianRent": 19000,
-            "medianPsf": 39.7,
-            "medianSize": 530,
-            "affordableShare": 0.37,
-            "nAnalysis": 662,
+            "medianRent": 12800,
+            "medianPsf": 43.1,
+            "medianSize": 294,
+            "affordableShare": 0.992,
+            "nAnalysis": 123,
+            "lowRentSample": false,
             "quantiles": [
-              10800,
-              13500,
-              19000,
-              29800,
-              47000
+              5640,
+              8800,
+              12800,
+              13800,
+              14500
             ]
           },
           "commute": {
@@ -2756,17 +2792,18 @@ window.DEMO_DATA = {
           "lat": 22.4507,
           "lng": 114.1613,
           "rent": {
-            "medianRent": 19000,
-            "medianPsf": 39.7,
-            "medianSize": 530,
-            "affordableShare": 0.37,
-            "nAnalysis": 662,
+            "medianRent": 12800,
+            "medianPsf": 43.1,
+            "medianSize": 294,
+            "affordableShare": 0.992,
+            "nAnalysis": 123,
+            "lowRentSample": false,
             "quantiles": [
-              10800,
-              13500,
-              19000,
-              29800,
-              47000
+              5640,
+              8800,
+              12800,
+              13800,
+              14500
             ]
           },
           "commute": {
@@ -2832,17 +2869,18 @@ window.DEMO_DATA = {
           "lat": 22.38255,
           "lng": 114.1876,
           "rent": {
-            "medianRent": 21400,
-            "medianPsf": 47.1,
-            "medianSize": 472,
-            "affordableShare": 0.239,
-            "nAnalysis": 715,
+            "medianRent": 13000,
+            "medianPsf": 46.9,
+            "medianSize": 273,
+            "affordableShare": 0.982,
+            "nAnalysis": 113,
+            "lowRentSample": false,
             "quantiles": [
-              12880,
-              15500,
-              21400,
-              32000,
-              42000
+              6340,
+              9800,
+              13000,
+              14300,
+              15000
             ]
           },
           "commute": {
