@@ -19,5 +19,7 @@ https://GXF678.github.io/com5507-hk-rental-livability/
 ## Notes
 
 - Commute time is an MTR station-to-station proxy.
+- Rent scoring uses beds, rooms, and subdivided flats; whole-unit listings are excluded.
 - Stations with low POI samples are excluded from dining rankings.
+- The recommendation is at station and 1 km living-circle level, not an individual-building recommendation.
 - This repository is for the COM5507 group project demonstration.
