@@ -56,7 +56,7 @@
           <div class="page-title">
             <span class="eyebrow">COM5507 · INTERACTIVE DATA DEMO</span>
             <h1>香港研究生租房宜居度</h1>
-            <p>先看学校通勤，再看租金和日常便利。每个排名都能回到数据证据。</p>
+            <p>先看学校通勤，再看学生租住样本和日常便利。推荐以站点生活圈为单位，不落到具体楼宇。</p>
           </div>
           <div class="header-actions">
             <label class="field">
@@ -176,7 +176,8 @@
             <div class="ranking-list" id="ranking-list"></div>
             <p class="ranking-footnote">
               <span class="note-mark">i</span>
-              低于 15,000 港元为可负担房源参考线；餐饮低样本站点不参与餐饮排名。
+              租金仅统计床位、单间和套房等学生租住线索，整租不参与租金排名；
+              餐饮低样本站点不参与餐饮排名。
             </p>
           </aside>
         </section>
@@ -225,16 +226,16 @@
             <span class="section-kicker">METHOD</span>
             <h2>排名不是单一答案</h2>
             <p>
-              三项分维度先转为百分位得分，再按当前偏好加权。低样本站点的餐饮维度记为缺失，
-              综合分按剩余维度重新归一化。
+              三项分维度先转为百分位得分，再按当前偏好加权。租金或餐饮数据不足时记为缺失，
+              综合分只按可用维度重新归一化，不会把缺失当成零。
             </p>
           </div>
           <div class="weight-visual" id="weight-visual"></div>
           <div class="method-caveat">
             <strong>解读边界</strong>
             <p>
-              通勤为港铁站到站代理，不含校园端步行或巴士接驳；POI 衡量数量便利性，
-              平价餐饮占比为业态代理指标。
+              通勤为港铁站到站代理，不含校园端步行或巴士接驳；POI 衡量数量便利性。
+              推荐保留在地铁站和一公里生活圈层级，不直接推荐具体楼宇。
             </p>
           </div>
         </section>
